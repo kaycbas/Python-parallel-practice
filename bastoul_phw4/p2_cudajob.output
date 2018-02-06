@@ -1,0 +1,41 @@
+----------------------------------------
+Begin PBS Prologue Tue Apr 11 18:26:02 PDT 2017
+Job ID:            23080857.hpc-pbs1.hpcc.usc.edu
+Username:          bastoul
+Accountname:       default
+Group:             csci-ar
+Project:           default
+Name:              CUDAp1
+Queue:             quick
+Shared Access:     no
+All Cores:         no
+Has MIC:           no
+Nodes:             hpc3025 
+TMPDIR:            /tmp/23080857.hpc-pbs1.hpcc.usc.edu
+End PBS Prologue Tue Apr 11 18:26:02 PDT 2017
+----------------------------------------
+CUDA malloc A: no error
+CUDA malloc B: no error
+CUDA malloc C: no error
+Copy A onto device: no error
+Copy B onto device: no error
+Copy C onto device: no error
+Copy C off of device: no error
+time is 19342413.000000 ns
+c[451][451] = 2048
+----------------------------------------
+Begin PBS Epilogue Tue Apr 11 18:26:03 PDT 2017
+Job ID:           23080857.hpc-pbs1.hpcc.usc.edu
+Username:         bastoul
+Accountname:      default
+Group:            csci-ar
+Job Name:         CUDAp1
+Session:          24192
+Limits:           neednodes=1:ppn=8:gpus=1,nodes=1:ppn=8:gpus=1,walltime=00:05:00
+Resources:        cput=00:00:00,energy_used=0,mem=18896kb,vmem=84108kb,walltime=00:00:01
+Queue:            quick
+Shared Access:    no
+Has MIC:          no
+removed '/scratch'
+End PBS Epilogue Tue Apr 11 18:26:03 PDT 2017
+----------------------------------------

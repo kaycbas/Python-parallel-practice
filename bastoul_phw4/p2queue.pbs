@@ -1,0 +1,18 @@
+#!/bin/sh
+
+#PBS -l nodes=1:ppn=8:gpus=1
+
+#PBS -l walltime=0:05:00
+
+#PBS -o cudajob_p2.output
+
+#PBS -e cudajob_p2.error
+
+#PBS -N CUDAp2
+
+#PBS -d /home/rcf-40/bastoul/phw4
+
+source /usr/usc/cuda/5.5/setup.sh
+
+./p2
+

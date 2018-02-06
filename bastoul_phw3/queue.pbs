@@ -1,0 +1,31 @@
+#!/bin/sh
+# I am a shell script
+#PBS -l nodes=2:ppn=2:myri
+
+# Run for 1 minutes
+#PBS -l walltime=0:05:00
+
+# Send all output sent to standard out to a file 
+#PBS -o mpijob.output
+
+# Send all output sent to standard error to a file
+#PBS -e mpijob.error
+
+# send my email address an email at the beginning (b) and the end (e) of the job
+#PBS -m be
+
+# My job is called 
+#PBS -N Mpitest
+
+# my email address
+#PBS -M bastoul@usc.edu
+
+# Before starting the job. Change into this directory
+# this has the executable and output files will be created relative to this directory
+#PBS -d /home/rcf-40/bastoul/phw3
+
+source /usr/usc/openmpi/default/setup.sh
+
+# Now run the program
+mpiexec ./p3
+
